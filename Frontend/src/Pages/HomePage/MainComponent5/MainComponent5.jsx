@@ -95,10 +95,10 @@ export default function MainComponent5() {
 
                     {/* White Overlay - appears on hover */}
                     <div
-                      className={`absolute inset-0 bg-white transition-opacity duration-500 ease-in-out z-10 ${
+                      className={`absolute inset-0 bg-[white] transition-opacity duration-500 ease-in-out z-10 ${
                         activeCardId === card.id
-                          ? "lg:opacity-50 md:opacity-30 "
-                          : "opacity-0"
+                          ? "lg:opacity-50 md:opacity-30  opacity-20 "
+                          : "opacity-0 "
                       }`}
                     />
 

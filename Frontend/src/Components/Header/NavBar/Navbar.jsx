@@ -33,9 +33,9 @@ export default function Navbar() {
 
   return (
     <nav className="flex  flex-col z-[-20]  bg-[#f2efef] DESKTOP--> ">
-      {/* MAIN NAVBAR */}
+      {/* MAIN NAVBAR For Desktop */}
       {!showLogo && (
-        <div className="flex  items-center justify-between w-[100%] !px-[1rem] pt-[0.5rem] bg-[#f2efef] DESKTOP--> lg:!px-[2rem] lg:!p-[0.5rem] lg:bg-[white]   ">
+        <div className="flex  items-center justify-between w-[100%] !px-[1rem] pt-[0.5rem] bg-[#f2efef] DESKTOP--> lg:!px-[2rem] lg:!p-[0.5rem] lg:bg-[white]  hidden lg:flex">
           {/* LOGO + MENU BUTTON */}
           <div className="flex items-center gap-2">
             <span
@@ -50,6 +50,23 @@ export default function Navbar() {
           <NavLinks />
         </div>
       )}
+
+      {/* MAIN NAVBAR For Mobile */}
+      <div className="flex  items-center justify-between w-[100%] !px-[1rem] pt-[0.5rem] bg-[#f2efef] DESKTOP--> lg:!px-[2rem] lg:!p-[0.5rem] lg:bg-[white] LG--> lg:hidden ">
+        {/* LOGO + MENU BUTTON */}
+        <div className="flex items-center gap-2">
+          <span
+            className="lg:hidden cursor-pointer"
+            onClick={() => setDropLinksToggle(!dropLinksToggle)}
+          >
+            <HiOutlineMenuAlt2 className="text-[1.8rem] text-[#373434bd]" />
+          </span>
+          <CompanyLogo />
+        </div>
+        {/* NAV LINKS */}
+        <NavLinks />
+      </div>
+
       {/* DROPLINKS */}
       <DropLinksProvider>
         <div className="lg:hidden">
