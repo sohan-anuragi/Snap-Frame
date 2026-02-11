@@ -1,8 +1,9 @@
 export const specialOccasionItems = [
-  { name: "Mother's Day", link: "/occasion/special/mothers-day" },
+  { name: "Mother's Day", link: "mothers-day-gifts" },
+  { name: "Brother's Day", link: "brothers-day-gifts" },
   { name: "Teacher's Day", link: "/occasion/special/teachers-day" },
   { name: "Republic Day", link: "/occasion/special/republic-day" },
-  { name: "Brother's Day", link: "/occasion/special/brothers-day" },
+
   { name: "Childrens Day", link: "/occasion/special/childrens-day" },
   { name: "Valentine's Day", link: "/occasion/special/valentines-day" },
   { name: "Father's Day", link: "/occasion/special/fathers-day" },

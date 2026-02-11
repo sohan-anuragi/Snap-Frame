@@ -1,7 +1,8 @@
 // Array of objects with name and link
 const printItems = [
-  { name: "Prints", link: "#", isNew: false },
-  { name: "Canvas Prints", link: "#", isNew: false },
+  { name: "Prints", link: "/canvas-prints", isNew: false },
+  { name: "Travel", link: "/travel", isNew: false },
+  { name: "Canvas Prints", link: "/canvas-prints", isNew: false },
   { name: "Shaped Canvas Prints", link: "#", isNew: false },
   { name: "Wall Display", link: "#", isNew: false },
   { name: "Photo Collage", link: "#", isNew: false },
@@ -19,7 +20,6 @@ const printItems = [
 export { printItems };
 
 const occasionItems = [
-  { name: "Travel", link: "#", isNew: false },
   { name: "Wedding", link: "#", isNew: false },
   { name: "Family", link: "#", isNew: false },
   { name: "Everyday", link: "#", isNew: false },

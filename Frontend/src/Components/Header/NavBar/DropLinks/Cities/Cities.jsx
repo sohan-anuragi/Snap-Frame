@@ -6,14 +6,15 @@ import { topCities } from "./CitiesData";
 export default function Cities() {
   const { dropLinksToggle, handleDropLinksToggle } =
     useContext(DropLinksContext);
+
   const otherCities = ["Other Cities"];
 
   return (
-    <div className="w-full  rounded-md bg-white font-sans px-1  DESKTOP--> lg:W-[20%]">
+    <div className="w-full rounded-md bg-white font-sans px-1 lg:w-[20%]">
       {/* HEADING + ARROW */}
       <button
         type="button"
-        className="flex w-full items-center justify-between px-6 py-3 text-[#000000e3] hover:bg-gray-100  rounded-md "
+        className="flex w-full items-center justify-between px-6 py-3 text-[#000000e3] hover:bg-gray-100 rounded-md"
         onClick={() =>
           handleDropLinksToggle(dropLinksToggle === "cities" ? "" : "cities")
         }
@@ -21,7 +22,7 @@ export default function Cities() {
         <h3 className="text-[1.3rem] font-bold text-gray-900/90">Cities</h3>
 
         <IoChevronForwardOutline
-          className={`text-gray-700 transition-transform duration-200 DESKTOP--> lg:hidden ${
+          className={`text-gray-700 transition-transform duration-200 lg:hidden ${
             dropLinksToggle === "cities" ? "rotate-90" : ""
           }`}
         />
@@ -30,10 +31,10 @@ export default function Cities() {
       {/* LIST ITEMS */}
       {dropLinksToggle === "cities" && (
         <ul className="border-l-2 border-gray-100 animate-in fade-in slide-in-from-top-2 duration-300">
-          {/* TOP CITIES (INDIA) */}
+          {/* TOP CITIES */}
           {topCities.map((city) => (
             <li
-              key={city}
+              key={city.name}
               className="
                 relative
                 pl-6 py-3
@@ -51,8 +52,8 @@ export default function Cities() {
                 after:rounded-bl-full
               "
             >
-              <a href="#" className="font-bold text-[#000000a2]">
-                {city}
+              <a href={city.link} className="font-bold text-[#000000a2]">
+                {city.name}
               </a>
             </li>
           ))}

@@ -1,6 +1,6 @@
 const personalisedGiftsItems = [
-  { name: "Personalised Gifts", link: "#", isNew: false },
-  { name: "By Type", link: "#", isNew: false },
+  { name: "Photo Puzzles", link: "photo-puzzles", isNew: false },
+  { name: "Photo Pillows", link: "photo-pillows", isNew: false },
   { name: "Beer Mugs", link: "#", isNew: false },
   { name: "Photo Prints", link: "#", isNew: false },
   { name: "Desk Calendars", link: "#", isNew: false },

@@ -21,7 +21,6 @@ export default function HomePage() {
       <MainComponent6></MainComponent6>
       <MainComponent7></MainComponent7>
       <MainComponent8></MainComponent8>
-      <MainComponent9></MainComponent9>
     </>
   );
 }

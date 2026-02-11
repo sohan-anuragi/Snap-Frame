@@ -18,13 +18,13 @@ export default function LoginMyorder({ cartCount = 0 }) {
               </span>
               <div className=" flex flex-col ">
                 <a
-                  href="#"
+                  href="login"
                   className=" hover:text-blue-600 text-[0.8rem] text-[#090909c5] !font-sans "
                 >
                   login
                 </a>
                 <a
-                  href="#"
+                  href="register"
                   className="text-[1rem] text-[#000000e4] !font-sans font-semibold "
                 >
                   Register
@@ -33,8 +33,8 @@ export default function LoginMyorder({ cartCount = 0 }) {
             </div>
           </span>
           {/* MYORDERS */}
-          <span
-            href="#"
+          <a
+            href="cart"
             className="!p-[1.1rem]  w-[33.33%]  flex items-center  border-r-[1px] border-gray-300 "
           >
             <div className="flex">
@@ -42,24 +42,18 @@ export default function LoginMyorder({ cartCount = 0 }) {
                 <FiPackage className="text-[1.5rem] md:text-[1.7rem] !mr-[0.3rem] md:!mr-[0.6rem]  text-[#2c2b2bc9]" />
               </span>
               <div className=" flex flex-col ">
-                <a
-                  href="#"
-                  className=" hover:text-blue-600 text-[0.9rem] text-[#090909c5] !font-sans "
-                >
+                <span className=" hover:text-blue-600 text-[0.9rem] text-[#090909c5] !font-sans ">
                   My
-                </a>
-                <a
-                  href="#"
-                  className="text-[1.1rem] text-[#000000e4] !font-sans font-semibold "
-                >
+                </span>
+                <span className="text-[1.1rem] text-[#000000e4] !font-sans font-semibold ">
                   Orders
-                </a>
+                </span>
               </div>
             </div>
-          </span>
+          </a>
           {/* MY REWARDS */}
-          <span
-            href="#"
+          <a
+            href="best-offers"
             className="!p-[1.1rem]  w-[33.33%]  flex items-center  border-r-[1px] border-gray-300 "
           >
             <div className="flex">
@@ -67,21 +61,15 @@ export default function LoginMyorder({ cartCount = 0 }) {
                 <FiGift className="text-[1.5rem] md:text-[1.7rem] !mr-[0.3rem] md:!mr-[0.6rem]  text-[#2c2b2bc9]" />
               </span>
               <div className=" flex flex-col ">
-                <a
-                  href="#"
-                  className=" hover:text-blue-600 text-[0.9rem] text-[#090909c5] !font-sans "
-                >
+                <span className=" hover:text-blue-600 text-[0.9rem] text-[#090909c5] !font-sans ">
                   My
-                </a>
-                <a
-                  href="#"
-                  className="text-[1.1rem] text-[#000000e4] !font-sans font-semibold "
-                >
+                </span>
+                <span className="text-[1.1rem] text-[#000000e4] !font-sans font-semibold ">
                   Rewards
-                </a>
+                </span>
               </div>
             </div>
-          </span>
+          </a>
         </div>
       </div>
     </>

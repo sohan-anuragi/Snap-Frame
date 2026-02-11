@@ -35,7 +35,7 @@ export default function DropLinks({ dropLinksToggle, setDropLinksToggle }) {
           <div className="!mt-[2rem] !mb-[2rem] !p-[1rem] flex flex-col gap-[-1]  overflow-y-auto h-[75vh] DESKTOP--> w-[100%] !lg:flex  ">
             {/* HOME BUTTO */}
             <a
-              href="#"
+              href="/"
               type="button"
               className="flex w-full items-center justify-between px-6 py-3 text-[#000000e3] hover:bg-gray-100"
             >
@@ -54,9 +54,12 @@ export default function DropLinks({ dropLinksToggle, setDropLinksToggle }) {
               type="button"
               className="flex w-full items-center justify-between px-6 py-3 text-[#000000e3] hover:bg-gray-100"
             >
-              <h3 className="text-[1.3rem] font-bold text-gray-900/90">
+              <a
+                href="/best-offers"
+                className="text-[1.3rem] font-bold text-gray-900/90"
+              >
                 Special Offers
-              </h3>
+              </a>
             </a>
           </div>
           {/* CONTACT COMPONENT PHONE */}

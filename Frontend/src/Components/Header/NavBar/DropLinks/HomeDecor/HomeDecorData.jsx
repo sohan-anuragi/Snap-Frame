@@ -67,49 +67,49 @@ export const rugItems = [
 export const byTypeItems = [
   {
     name: "Custom Neon Signs",
-    link: "/by-type/custom-neon-signs",
+    link: "/custom-neon-signs",
     isNew: true,
   },
   {
     name: "Custom Neck Pillow",
-    link: "/by-type/custom-neck-pillow",
+    link: "/custom-neck-pillow",
     isNew: true,
   },
   {
     name: "Custom Bolster Pillow",
-    link: "/by-type/custom-bolster-pillow",
+    link: "/custom-bolster-pillow",
     isNew: true,
   },
 
-  { name: "Metal Prints", link: "/by-type/metal-prints", isNew: false },
+  { name: "Metal Prints", link: "/metal-prints", isNew: false },
   {
     name: "Large Metal Prints",
-    link: "/by-type/large-metal-prints",
+    link: "/large-metal-prints",
     isNew: false,
   },
-  { name: "Acrylic Prints", link: "/by-type/acrylic-prints", isNew: false },
-  { name: "Framed Prints", link: "/by-type/framed-prints", isNew: false },
-  { name: "Poster Prints", link: "/by-type/poster-prints", isNew: false },
-  { name: "Bus Rolls", link: "/by-type/bus-rolls", isNew: false },
+  { name: "Acrylic Prints", link: "/acrylic-prints", isNew: false },
+  { name: "Framed Prints", link: "/framed-prints", isNew: false },
+  { name: "Poster Prints", link: "/poster-prints", isNew: false },
+  { name: "Bus Rolls", link: "/bus-rolls", isNew: false },
   {
     name: "Caricature Photo Stand",
-    link: "/by-type/caricature-photo-stand",
+    link: "/caricature-photo-stand",
     isNew: false,
   },
   {
     name: "Custom Wall Clock",
-    link: "/by-type/custom-wall-clock",
+    link: "/custom-wall-clock",
     isNew: false,
   },
 ];
 
 export const byThemeItems = [
-  { name: "Minimalist", link: "/by-theme/minimalist", isNew: false },
-  { name: "Bohemian", link: "/by-theme/bohemian", isNew: false },
-  { name: "Modern", link: "/by-theme/modern", isNew: false },
-  { name: "Vintage", link: "/by-theme/vintage", isNew: false },
-  { name: "Rustic", link: "/by-theme/rustic", isNew: false },
-  { name: "Industrial", link: "/by-theme/industrial", isNew: true },
-  { name: "Scandinavian", link: "/by-theme/scandinavian", isNew: false },
-  { name: "Mediterranean", link: "/by-theme/mediterranean", isNew: false },
+  { name: "Minimalist", link: "/minimalist", isNew: false },
+  { name: "Bohemian", link: "/bohemian", isNew: false },
+  { name: "Modern", link: "/modern", isNew: false },
+  { name: "Vintage", link: "/vintage", isNew: false },
+  { name: "Rustic", link: "/rustic", isNew: false },
+  { name: "Industrial", link: "/industrial", isNew: true },
+  { name: "Scandinavian", link: "/scandinavian", isNew: false },
+  { name: "Mediterranean", link: "/mediterranean", isNew: false },
 ];

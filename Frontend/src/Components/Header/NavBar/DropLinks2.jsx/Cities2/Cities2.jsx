@@ -17,13 +17,14 @@ export default function Cities2({ dropLinksToggle, handleDropLinksToggle }) {
               <h2 className="text-base font-bold text-[#050505a9] !font-sans mb-[0.5rem] pb-[0.5rem] border-b-[1px] border-[#ccccccb8] inline-block">
                 Popular Cities
               </h2>
+
               {topCities1.map((city) => (
-                <li key={city} className="">
+                <li key={city.link}>
                   <a
-                    href="#"
+                    href={city.link}
                     className="text-[0.8rem] font-medium font-sans text-[#000000a6] hover:text-[#050505] transition"
                   >
-                    {city}
+                    {city.name}
                   </a>
                 </li>
               ))}
@@ -34,13 +35,14 @@ export default function Cities2({ dropLinksToggle, handleDropLinksToggle }) {
               <h2 className="text-base font-bold text-[#050505a9] !font-sans mb-[0.5rem] pb-[0.5rem] border-b-[1px] border-[#ccccccb8] inline-block">
                 More Cities
               </h2>
+
               {topCities2.map((city) => (
-                <li key={city} className="">
+                <li key={city.link}>
                   <a
-                    href="#"
+                    href={city.link}
                     className="text-[0.8rem] font-medium font-sans text-[#000000a6] hover:text-[#050505] transition"
                   >
-                    {city}
+                    {city.name}
                   </a>
                 </li>
               ))}

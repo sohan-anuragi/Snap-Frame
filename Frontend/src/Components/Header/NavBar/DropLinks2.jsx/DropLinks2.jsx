@@ -11,179 +11,230 @@ import CompanyLogo from "../CompanyLogo";
 import { useEffect, useState } from "react";
 import CompanyLogo3 from "../../../../assets/CompanyLogo/CompanyLogo3.svg";
 import { FiSearch } from "react-icons/fi";
+import SearchBar from "../SearchBar/SearchBar";
+import { FaShippingFast, FaHeadset } from "react-icons/fa";
+import { MdPriceCheck } from "react-icons/md";
+import { GoVerified } from "react-icons/go";
 
 export default function DropLinks2({ showLogo }) {
   const { dropLinksToggle, handleDropLinksToggle } =
     useContext(DropLinksContext);
 
+  const [isSearchOpen, searchSetIsOpen] = useState(false);
+  const [searchBarOpen, setSearchBarOpen] = useState(false);
+
   return (
     <>
-      <div className=" relative ">
-        <div className="flex flex-row py-1 items-center justify-between z-100 w-full bg-[#f1f1f1] border-b-[2px] pr-[1rem] border-[#eeeeee]">
-          {showLogo && (
-            <a href="/">
-              {" "}
-              <img
-                src={CompanyLogo3}
-                alt="SnapFrame Logo"
-                className="w-[1.5rem] h-auto ml-8"
-              />
-            </a>
+      <div>
+        <div>
+          {dropLinksToggle !== "" && (
+            <div className="fixed top-0 left-0 bg-[black] opacity-50 h-[100vh] w-[100vw]   "></div>
           )}
+          <div className=" relative  ">
+            <div className="flex flex-row py-1 items-center justify-between z-[] w-full bg-[#f6f6f6]  pr-[1rem] ">
+              {showLogo && (
+                <a href="/">
+                  {" "}
+                  <img
+                    src={CompanyLogo3}
+                    alt="SnapFrame Logo"
+                    className="w-[1.5rem] h-auto ml-8"
+                  />
+                </a>
+              )}
 
-          {/* PRINTS */}
+              {/* PRINTS */}
 
-          <div className="flex flex-row">
-            <div
-              className="flex items-center justify-between pl-6 py-2 text-[#000000f7] cursor-pointer "
-              onMouseEnter={() => handleDropLinksToggle("prints")}
-              onMouseLeave={() => handleDropLinksToggle("")}
-            >
-              <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
-                Prints
-              </h3>
+              <div className="flex flex-row">
+                <div
+                  className="flex items-center justify-between pl-6 py-2 text-[#000000f7] cursor-pointer "
+                  onMouseEnter={() => handleDropLinksToggle("prints")}
+                  onMouseLeave={() => handleDropLinksToggle("")}
+                >
+                  <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
+                    Prints
+                  </h3>
 
-              <IoChevronForwardOutline
-                className={`text-[1.1rem]  transition-transform duration-200 ${
-                  dropLinksToggle === "prints"
-                    ? "rotate-270 text-[#a90404]"
-                    : "rotate-90"
-                }`}
-              />
+                  <IoChevronForwardOutline
+                    className={`text-[1.1rem]  transition-transform duration-200 ${
+                      dropLinksToggle === "prints"
+                        ? "rotate-270 text-[#a90404]"
+                        : "rotate-90"
+                    }`}
+                  />
+                </div>
+
+                {/* HOME DECOR */}
+
+                <div
+                  className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
+                  onMouseEnter={() => handleDropLinksToggle("homeDecor")}
+                  onMouseLeave={() => handleDropLinksToggle("")}
+                >
+                  <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
+                    Home Decor
+                  </h3>
+
+                  <IoChevronForwardOutline
+                    className={`text-[1.1rem]  transition-transform duration-200 ${
+                      dropLinksToggle === "homeDecor"
+                        ? "rotate-270 text-[#a90404]"
+                        : "rotate-90"
+                    }`}
+                  />
+                </div>
+
+                {/* personalized GIFTS */}
+                <div
+                  className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
+                  onMouseEnter={() => handleDropLinksToggle("gifts")}
+                  onMouseLeave={() => handleDropLinksToggle("")}
+                >
+                  <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
+                    Personalized Gifts
+                  </h3>
+
+                  <IoChevronForwardOutline
+                    className={`text-[1.1rem]  transition-transform duration-200 ${
+                      dropLinksToggle === "gifts"
+                        ? "rotate-270 text-[#a90404]"
+                        : "rotate-90"
+                    }`}
+                  />
+                </div>
+                {/* OCCASIONS */}
+                <div
+                  className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
+                  onMouseEnter={() => handleDropLinksToggle("occasions")}
+                  onMouseLeave={() => handleDropLinksToggle("")}
+                >
+                  <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
+                    Occasions
+                  </h3>
+
+                  <IoChevronForwardOutline
+                    className={`text-[1.1rem]  transition-transform duration-200 ${
+                      dropLinksToggle === "occasions"
+                        ? "rotate-270 text-[#a90404]"
+                        : "rotate-90"
+                    }`}
+                  />
+                </div>
+                {/* CITIES */}
+                <div
+                  className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
+                  onMouseEnter={() => handleDropLinksToggle("cities")}
+                  onMouseLeave={() => handleDropLinksToggle("")}
+                >
+                  <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
+                    Countries/Cities
+                  </h3>
+
+                  <IoChevronForwardOutline
+                    className={`text-[1.1rem]  transition-transform duration-200 ${
+                      dropLinksToggle === "cities"
+                        ? "rotate-270 text-[#a90404]"
+                        : "rotate-90"
+                    }`}
+                  />
+                </div>
+                {/* BEST OFFERS */}
+                <a
+                  href="/best-offers"
+                  className="flex cursor-pointer items-center justify-between  px-6 py-2 text-[#000000f7]"
+                >
+                  <h3 className="text-[1rem] mr-[1rem] hover:text-[#920202] !font-sans font-semibold text-[#000000ef]">
+                    Best Offers
+                  </h3>
+                </a>
+              </div>
+              {/* SEARCH INPUT */}
+              {!showLogo && <Coutriesbox></Coutriesbox>}
+              {showLogo && (
+                <div
+                  className=" "
+                  onFocus={() => searchSetIsOpen(!isSearchOpen)}
+                  onBlur={() => {
+                    setTimeout(() => {
+                      searchSetIsOpen(false);
+                    }, 500);
+                  }}
+                >
+                  <div className=" relative flex items-center gap-2 lg:bg-[white]">
+                    <input
+                      type="text"
+                      placeholder="Search products"
+                      className="hidden lg:block w-[10rem] xl:w-[15rem] bg-white !px-2 py-1 text-[0.9rem] placeholder-gray-400 placeholder-semibold outline-none"
+                    />
+                    <div className="lg:bg-gray-300 lg:!p-[0.4rem]">
+                      <FiSearch className="text-[1.5rem] text-[#37343494]" />
+                    </div>
+                  </div>
+                  <div className="absolute top-[2.8rem] right-[-3.7rem] lg:right-0  ">
+                    {isSearchOpen && <SearchBar></SearchBar>}
+                  </div>
+                </div>
+              )}
             </div>
+            {/* PRINTS2 */}
+            {dropLinksToggle === "prints" && (
+              <Prints2
+                dropLinksToggle={dropLinksToggle}
+                handleDropLinksToggle={handleDropLinksToggle}
+              ></Prints2>
+            )}
 
-            {/* HOME DECOR */}
+            {/* HOME DECOR2 */}
+            {dropLinksToggle === "homeDecor" && (
+              <HomeDecor2
+                dropLinksToggle={dropLinksToggle}
+                handleDropLinksToggle={handleDropLinksToggle}
+              ></HomeDecor2>
+            )}
 
-            <div
-              className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
-              onMouseEnter={() => handleDropLinksToggle("homeDecor")}
-              onMouseLeave={() => handleDropLinksToggle("")}
-            >
-              <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
-                Home Decor
-              </h3>
-
-              <IoChevronForwardOutline
-                className={`text-[1.1rem]  transition-transform duration-200 ${
-                  dropLinksToggle === "homeDecor"
-                    ? "rotate-270 text-[#a90404]"
-                    : "rotate-90"
-                }`}
-              />
+            {/* GIFTS2 */}
+            {dropLinksToggle === "gifts" && (
+              <Gifts2
+                dropLinksToggle={dropLinksToggle}
+                handleDropLinksToggle={handleDropLinksToggle}
+              ></Gifts2>
+            )}
+            {/* OCCASIONS2 */}
+            {dropLinksToggle === "occasions" && (
+              <Occasions2
+                dropLinksToggle={dropLinksToggle}
+                handleDropLinksToggle={handleDropLinksToggle}
+              ></Occasions2>
+            )}
+            {/* CITIES2 */}
+            {dropLinksToggle === "cities" && (
+              <Cities2
+                dropLinksToggle={dropLinksToggle}
+                handleDropLinksToggle={handleDropLinksToggle}
+              ></Cities2>
+            )}
+          </div>
+        </div>
+        {/* BOTTOM STRIP */}
+        {showLogo && (
+          <div className="w-full bg-white py-[0.5rem] flex items-center justify-center gap-[2rem] text-[0.8rem] text-[black]">
+            <div className="flex items-center gap-[0.5rem]">
+              <FaShippingFast className="text-[1.2rem]" />
+              <span>Lightning Fast Shipping</span>
             </div>
-
-            {/* personalized GIFTS */}
-            <div
-              className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
-              onMouseEnter={() => handleDropLinksToggle("gifts")}
-              onMouseLeave={() => handleDropLinksToggle("")}
-            >
-              <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
-                Personalized Gifts
-              </h3>
-
-              <IoChevronForwardOutline
-                className={`text-[1.1rem]  transition-transform duration-200 ${
-                  dropLinksToggle === "gifts"
-                    ? "rotate-270 text-[#a90404]"
-                    : "rotate-90"
-                }`}
-              />
+            <div className="flex items-center gap-[0.5rem]">
+              <MdPriceCheck className="text-[1.2rem]" />
+              <span>Lowest Price GUARANTEED</span>
             </div>
-            {/* OCCASIONS */}
-            <div
-              className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
-              onMouseEnter={() => handleDropLinksToggle("occasions")}
-              onMouseLeave={() => handleDropLinksToggle("")}
-            >
-              <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
-                Occasions
-              </h3>
-
-              <IoChevronForwardOutline
-                className={`text-[1.1rem]  transition-transform duration-200 ${
-                  dropLinksToggle === "occasions"
-                    ? "rotate-270 text-[#a90404]"
-                    : "rotate-90"
-                }`}
-              />
+            <div className="flex items-center gap-[0.5rem]">
+              <GoVerified className="text-[1.2rem]" />
+              <span>100% Quality GUARANTEE</span>
             </div>
-            {/* CITIES */}
-            <div
-              className="flex cursor-pointer items-center justify-between px-6 py-2 text-[#000000f7]"
-              onMouseEnter={() => handleDropLinksToggle("cities")}
-              onMouseLeave={() => handleDropLinksToggle("")}
-            >
-              <h3 className="text-[1rem] mr-[1rem] hover:text-[#a90404] !font-sans font-semibold text-[#000000ef]">
-                Countries/Cities
-              </h3>
-
-              <IoChevronForwardOutline
-                className={`text-[1.1rem]  transition-transform duration-200 ${
-                  dropLinksToggle === "cities"
-                    ? "rotate-270 text-[#a90404]"
-                    : "rotate-90"
-                }`}
-              />
-            </div>
-            {/* BEST OFFERS */}
-            <div className="flex cursor-pointer items-center justify-between  px-6 py-2 text-[#000000f7]">
-              <h3 className="text-[1rem] mr-[1rem] hover:text-[#920202] !font-sans font-semibold text-[#000000ef]">
-                Best Offers
-              </h3>
+            <div className="flex items-center gap-[0.5rem]">
+              <FaHeadset className="text-[1.2rem]" />
+              <span>Top Notch Customer Service</span>
             </div>
           </div>
-          {/* SEARCH INPUT */}
-          {!showLogo && <Coutriesbox></Coutriesbox>}
-          {showLogo && (
-            <div className="flex items-center gap-2 lg:bg-[white] ">
-              <input
-                type="text"
-                placeholder="Search products"
-                className="hidden lg:block w-[10rem] xl:w-[15rem] bg-white !px-2 py-1 text-[0.9rem] placeholder-gray-400 placeholder-semibold outline-none"
-              />
-              <div className="lg:bg-gray-300 lg:!p-[0.4rem]">
-                <FiSearch className="text-[1.5rem] text-[#37343494]" />
-              </div>
-            </div>
-          )}
-        </div>
-        {/* PRINTS2 */}
-        {dropLinksToggle === "prints" && (
-          <Prints2
-            dropLinksToggle={dropLinksToggle}
-            handleDropLinksToggle={handleDropLinksToggle}
-          ></Prints2>
-        )}
-
-        {/* HOME DECOR2 */}
-        {dropLinksToggle === "homeDecor" && (
-          <HomeDecor2
-            dropLinksToggle={dropLinksToggle}
-            handleDropLinksToggle={handleDropLinksToggle}
-          ></HomeDecor2>
-        )}
-
-        {/* GIFTS2 */}
-        {dropLinksToggle === "gifts" && (
-          <Gifts2
-            dropLinksToggle={dropLinksToggle}
-            handleDropLinksToggle={handleDropLinksToggle}
-          ></Gifts2>
-        )}
-        {/* OCCASIONS2 */}
-        {dropLinksToggle === "occasions" && (
-          <Occasions2
-            dropLinksToggle={dropLinksToggle}
-            handleDropLinksToggle={handleDropLinksToggle}
-          ></Occasions2>
-        )}
-        {/* CITIES2 */}
-        {dropLinksToggle === "cities" && (
-          <Cities2
-            dropLinksToggle={dropLinksToggle}
-            handleDropLinksToggle={handleDropLinksToggle}
-          ></Cities2>
         )}
       </div>
     </>
