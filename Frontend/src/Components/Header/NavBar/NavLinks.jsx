@@ -63,7 +63,7 @@ export default function NavLinks({ cartCount = 0 }) {
               3
             </span>
           </div>
-          <p className="text-[0.9rem] hidden lg:inline-block !mt-[0.8rem] text-[#0000007c] !font-sans font-semibold ">
+          <p className="text-[0.9rem] hidden lg:inline-block !mt-[0.8rem] text-[#0000006c] !font-sans font-semibold ">
             Cart
           </p>
         </div>
