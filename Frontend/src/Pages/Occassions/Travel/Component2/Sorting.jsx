@@ -58,8 +58,8 @@ export default function Sorting() {
   }, [isOpen]);
 
   return (
-    <div className="flex p-[2rem] justify-between">
-      <div className="text-[1.8rem] text-[black] font-serif ">
+    <div className="flex flex-col md:flex-row p-[2rem] justify-between">
+      <div className="text-[1.8rem] mb-[1rem] md:mb-0 text-[black] font-serif ">
         Mother's Day Gifts
       </div>
 

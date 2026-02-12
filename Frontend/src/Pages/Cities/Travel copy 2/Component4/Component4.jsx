@@ -5,8 +5,8 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import herImg from "./component4Img/valentine-banner-for-her.jpg";
-import himImg from "./component4Img/valentine-banner-for-him.jpg";
+import herImg from "./Component4Img/valentine-banner-for-her.jpg";
+import himImg from "./Component4Img/valentine-banner-for-him.jpg";
 
 const cardData = [
   {

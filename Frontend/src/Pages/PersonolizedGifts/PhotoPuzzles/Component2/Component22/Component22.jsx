@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { MdExpandMore } from "react-icons/md";
 
 export default function Component22() {
   // Price data for each option

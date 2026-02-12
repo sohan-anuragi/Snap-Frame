@@ -58,12 +58,12 @@ export default function Sorting() {
   }, [isOpen]);
 
   return (
-    <div className="flex p-[2rem] justify-between">
-      <div className="text-[1.8rem] text-[black] font-serif ">
+    <div className="flex p-[2rem] flex-col md:flex-row justify-between">
+      <div className="text-[1.8rem] text-[black] mb-[1rem] md:mb-0 font-serif ">
         Brothers Day Gifts
       </div>
 
-      <div className="flex items-center gap-4 ">
+      <div className="flex  items-center gap-4 ">
         {/* Left Side - Product Count & Label */}
         <div className="text-[0.9rem] font-semibold  text-[black]">
           156 Products | <span className="ml-2 text-[#403e3e] ">Sort By :</span>

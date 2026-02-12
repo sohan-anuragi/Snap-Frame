@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import personalizedGifts from "./Component5.Img/personalized_gifts_for_girlfriend.png";
 import holiGifts from "./Component5.Img/custom_holy_gifts.png";
 import valentineGifts from "./Component5.Img/valentine-day-sale-in.png";

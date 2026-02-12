@@ -58,8 +58,10 @@ export default function Sorting() {
   }, [isOpen]);
 
   return (
-    <div className="flex p-[2rem] justify-between">
-      <div className="text-[1.8rem] text-[black] font-serif ">Delhi</div>
+    <div className="flex p-[2rem] flex-col md:flex-row justify-between">
+      <div className="text-[1.8rem] mb-[1rem] md:mb-0 text-[black] font-serif ">
+        Delhi
+      </div>
 
       <div className="flex items-center gap-4 ">
         {/* Left Side - Product Count & Label */}
