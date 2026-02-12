@@ -63,7 +63,7 @@ export default function SearchBar({ searchBarOpen, setSearchBarOpen }) {
   ];
 
   return (
-    <div className="w-[100vw] h-[82vh]    lg:w-[63vw] p-[2rem] pt-[1rem]  bg-white">
+    <div className="w-[100vw] h-[85vh]    lg:w-[63vw] p-[2rem] pt-[1rem]  bg-white">
       <div className="z-[300]">
         {/* Search Bar */}
         <div className="p-[0.2rem] mb-6">
@@ -107,7 +107,7 @@ export default function SearchBar({ searchBarOpen, setSearchBarOpen }) {
         </div>
 
         {/* Products Grid */}
-        <div className="px-4 overflow-y-scroll md:overflow-visible max-h-[50vh] mb-8">
+        <div className="px-4 h-[22rem]  overflow-y-scroll ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {products.map((product) => (
               <div key={product.id} className="flex gap-4">

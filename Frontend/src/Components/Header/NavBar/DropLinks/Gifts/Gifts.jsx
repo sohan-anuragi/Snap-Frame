@@ -36,23 +36,25 @@ export default function Gifts() {
             <li
               key={itemObj.name}
               className="
-                relative
-                pl-6 py-3
-                text-sm font-medium text-gray-800/90
-                hover:bg-gray-100
-                after:content-['']
-                after:absolute
-                after:left-[-2px]
-                after:bottom-0
-                after:w-[20px]
-                after:h-[20px]
-                after:border-l-2
-                after:border-b-2
-                after:border-gray-200
-                after:rounded-bl-full
-              "
+    relative
+    text-sm font-medium text-gray-800/90
+    hover:bg-gray-100
+    after:content-['']
+    after:absolute
+    after:left-[-2px]
+    after:bottom-0
+    after:w-[20px]
+    after:h-[20px]
+    after:border-l-2
+    after:border-b-2
+    after:border-gray-200
+    after:rounded-bl-full
+  "
             >
-              <a href={itemObj.link} className="font-bold text-[#000000a2]">
+              <a
+                href={itemObj.link}
+                className="block w-full h-full pl-6 py-3 font-bold text-[#000000a2]"
+              >
                 {itemObj.name}
                 {itemObj.isNew && (
                   <span className="ml-2 rounded-md bg-[#4b0000] px-1.5 py-[1px] text-[10px] font-semibold text-white">

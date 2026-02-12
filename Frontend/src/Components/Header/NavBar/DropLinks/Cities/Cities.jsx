@@ -36,24 +36,23 @@ export default function Cities() {
             <li
               key={city.name}
               className="
-                relative
-                pl-6 py-3
-                text-sm font-medium text-gray-800
-                hover:bg-gray-100
-                after:content-['']
-                after:absolute
-                after:left-[-2px]
-                after:bottom-0
-                after:w-[20px]
-                after:h-[20px]
-                after:border-l-2
-                after:border-b-2
-                after:border-gray-200
-                after:rounded-bl-full
-              "
+    relative
+    text-sm font-medium text-gray-800
+    hover:bg-gray-100
+    after:content-['']
+    after:absolute
+    after:left-[-2px]
+    after:bottom-0
+    after:w-[20px]
+    after:h-[20px]
+    after:border-l-2
+    after:border-b-2
+    after:border-gray-200
+    after:rounded-bl-full
+  "
             >
-              <a href={city.link} className="font-bold text-[#000000a2]">
-                {city.name}
+              <a href={city.link} className="block w-full h-full pl-6 py-3">
+                <span className="font-bold text-[#000000a2]">{city.name}</span>
               </a>
             </li>
           ))}

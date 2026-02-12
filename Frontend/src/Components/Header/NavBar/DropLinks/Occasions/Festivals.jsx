@@ -30,9 +30,11 @@ export default function Festivals() {
           {festivalItems.map((item) => (
             <li
               key={item.name}
-              className="relative pl-4 py-2 text-sm font-medium text-gray-700/85 hover:bg-gray-100 after:content-[''] after:absolute after:left-[-2px] after:bottom-0 after:w-[14px] after:h-[14px] after:border-l-2 after:border-b-2 after:border-gray-200 after:rounded-bl-full"
+              className="relative text-sm font-medium text-gray-700/85 hover:bg-gray-100 after:content-[''] after:absolute after:left-[-2px] after:bottom-0 after:w-[14px] after:h-[14px] after:border-l-2 after:border-b-2 after:border-gray-200 after:rounded-bl-full"
             >
-              <a href={item.link}>{item.name}</a>
+              <a href={item.link} className="block w-full h-full pl-4 py-2">
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>

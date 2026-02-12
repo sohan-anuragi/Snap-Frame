@@ -1,9 +1,9 @@
 // Inline data arrays (with links)
 const topCities = [
-  { name: "Delhi", link: "/city/delhi" },
-  { name: "Noida", link: "/city/noida" },
-  { name: "Amritsar", link: "/city/amritsar" },
-  { name: "Mumbai", link: "/city/mumbai" },
+  { name: "Delhi", link: "/delhi" },
+  { name: "Noida", link: "/noida" },
+  { name: "Amritsar", link: "/amritsar" },
+  { name: "Mumbai", link: "/mumbai" },
   { name: "Pune", link: "/city/pune" },
   { name: "Agra", link: "/city/agra" },
   { name: "Bangalore", link: "/city/bangalore" },
